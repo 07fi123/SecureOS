@@ -1,0 +1,8 @@
+term.clear()
+term.setCursorPos(1,1)
+shell.run("delete","install")
+shell.run("delete","eject")
+shell.run("cp","disk/install","install")
+shell.run("cp","dis/eject","eject")
+print("Want to Install Type install,if not type eject.")
+

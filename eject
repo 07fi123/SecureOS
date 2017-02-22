@@ -1,0 +1,7 @@
+shell.run("delete","install")
+shell.run("delete","eject")
+disk.eject("top")
+disk.eject("bottom")
+disk.eject("right")
+disk.eject("left")
+os.reboot()

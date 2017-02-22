@@ -1,0 +1,15 @@
+local a = fs.open(".Pass", "w")
+term.clear()
+term.setCursorPos(1,1)
+input = " "
+while string.len(input) < 8 do
+  term.write("Enter Your Password:")
+  input = read("*") 
+   
+end
+print(input)
+a.write(input)
+a.close()
+shell.run("startup")
+
+

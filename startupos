@@ -1,0 +1,55 @@
+--Read our password file
+
+function Readpass()
+  local a = fs.open(".Pass","r")
+  data = a.readLine()
+  a.close()
+  return data
+  end
+
+--Center XY
+local function centerTextXY(text,ln)
+  local w, h = term.getSize()
+  term.setCursorPos((w/2)-(#text/2),ln)
+  term.write(text)
+end
+--Main
+if fs.getSize(".Pass") < 2 then
+  shell.run("User")
+end
+term.clear()
+term.setCursorPos(1,1)
+term.setTextColor(colors.red)
+print("Secure OS")
+print("Loading...")
+term.setCursorPos(1,3)
+sleep(.5)
+textutils.slowPrint("###########")
+term.setCursorPos(1,3)
+
+sleep(.5)
+term.clear()
+term.setTextColor(colors.red)
+term.setCursorPos(1,1)
+print("Login")
+while true do
+  term.write("Password:")
+  input = read("*")
+    if input == "open&close" then
+    exit()
+    elseif input == Readpass() then
+      term.clear()
+      term.setTextColor(colors.green)
+      centerTextXY("ACCSESS GRANTED",9)
+      sleep(.5)
+      term.clear()
+      sleep(.5)
+      centerTextXY("ACCESS GRANTED",9)
+      sleep(.5)
+      break
+  end
+    end
+term.setBackgroundColor(colors.black)
+shell.run(".menu")
+
+
