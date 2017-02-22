@@ -1,29 +1,13 @@
-# README #
-
-This README would normally document whatever steps are necessary to get your application up and running.
+# Secure OS README #
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Currently its for a  little OS built on top of the Minecraft mod Computer Craft.
 
-### How do I get set up? ###
+### Where do I get this fabled OS from ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* As of right now we dont have a pastbin link but eventualy we will have an installer for you to use to install the OS on your computer craft Computer
 
-### Contribution guidelines ###
+### Ok now what ###
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* Take a look at the code and sit back and enjoy the ride.
